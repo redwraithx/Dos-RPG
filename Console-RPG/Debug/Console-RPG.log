@@ -1,26 +1,11 @@
-﻿  Armor.cpp
-  Debug_Mode.cpp
-  Game.cpp
-C:\Dev\CPP\Console-RPG\Console-RPG\Game.cpp(18,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Magic.cpp
-  Map.cpp
-  Monster.cpp
-  Player.cpp
+﻿  Player.cpp
 C:\Dev\CPP\Console-RPG\Console-RPG\Player.cpp(196,20): warning C4018: '<': signed/unsigned mismatch
 C:\Dev\CPP\Console-RPG\Console-RPG\Player.cpp(217,20): warning C4018: '<': signed/unsigned mismatch
 C:\Dev\CPP\Console-RPG\Console-RPG\Player.cpp(379,21): warning C4018: '<': signed/unsigned mismatch
 C:\Dev\CPP\Console-RPG\Console-RPG\Player.cpp(420,21): warning C4018: '<': signed/unsigned mismatch
-C:\Dev\CPP\Console-RPG\Console-RPG\Player.cpp(700,21): warning C4018: '<': signed/unsigned mismatch
-C:\Dev\CPP\Console-RPG\Console-RPG\Player.cpp(724,47): warning C4018: '>': signed/unsigned mismatch
-C:\Dev\CPP\Console-RPG\Console-RPG\Player.cpp(1193,22): warning C4018: '<': signed/unsigned mismatch
-C:\Dev\CPP\Console-RPG\Console-RPG\Player.cpp(1232,22): warning C4018: '<': signed/unsigned mismatch
-C:\Dev\CPP\Console-RPG\Console-RPG\Player.cpp(1363,22): warning C4018: '<': signed/unsigned mismatch
-  Potion.cpp
-  Random.cpp
-  Store.cpp
-C:\Dev\CPP\Console-RPG\Console-RPG\Store.cpp(96,24): warning C4018: '<': signed/unsigned mismatch
-C:\Dev\CPP\Console-RPG\Console-RPG\Store.cpp(401,24): warning C4018: '<': signed/unsigned mismatch
-  Weapon.cpp
-  Wiz.cpp
-  Generating Code...
+C:\Dev\CPP\Console-RPG\Console-RPG\Player.cpp(709,21): warning C4018: '<': signed/unsigned mismatch
+C:\Dev\CPP\Console-RPG\Console-RPG\Player.cpp(733,47): warning C4018: '>': signed/unsigned mismatch
+C:\Dev\CPP\Console-RPG\Console-RPG\Player.cpp(1204,22): warning C4018: '<': signed/unsigned mismatch
+C:\Dev\CPP\Console-RPG\Console-RPG\Player.cpp(1243,22): warning C4018: '<': signed/unsigned mismatch
+C:\Dev\CPP\Console-RPG\Console-RPG\Player.cpp(1374,22): warning C4018: '<': signed/unsigned mismatch
   Console-RPG.vcxproj -> C:\Dev\CPP\Console-RPG\Debug\Console-RPG.exe

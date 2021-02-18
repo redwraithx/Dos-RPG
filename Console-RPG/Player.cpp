@@ -438,9 +438,9 @@ void Player::PlayerClassSelection()
 		mArmor = 2;
 
 		// weapon
-		mWeaponHeld.mName = "Short Sword";
+		mWeaponHeld.mName = "Tarnished Dagger";
 		mWeaponHeld.mDamageRange.mLow = 1;
-		mWeaponHeld.mDamageRange.mHigh = 6;
+		mWeaponHeld.mDamageRange.mHigh = 4;
 
 		setOriginalWeaponValues(mWeaponHeld.mDamageRange);
 
@@ -490,6 +490,9 @@ void Player::PlayerRaceSelection()
 
 	case 2: // elf
 			// pro   +(1-2) acc
+
+		mRaceName = "Elf";
+		
 		tempAcc += Random(1, 4);
 
 		// con   -(1-2) hps
@@ -504,6 +507,9 @@ void Player::PlayerRaceSelection()
 
 	case 3: // dwarf
 			// pro   +(2-6) hps
+
+		mRaceName = "Dwarf";
+
 		tempHp += Random(2, 8);
 
 		// con   -(1-2) acc
@@ -518,6 +524,9 @@ void Player::PlayerRaceSelection()
 
 	default: // gnome
 			 // pro   +(1-4) acc
+
+		mRaceName = "Gnome";
+
 		tempAcc += Random(1, 8);
 
 		// con   -(1-2) hp
@@ -572,7 +581,7 @@ bool Player::attack(Monster* monster[])
 	}
 
 	// check if user has any potions to use
-	if (mPotionsOwned.size() > 0)
+	if (!mPotionsOwned.empty())
 	{
 		std::cout << "3) use Potion, ";
 	}
@@ -777,7 +786,7 @@ bool Player::attack(Monster* monster[])
 
 
 
-		if (mPotionsOwned.size() == 0)
+		if (mPotionsOwned.empty())
 		{
 			std::cout << "You look for a potion, but you have none it seems." << std::endl << std::endl;
 
@@ -1104,9 +1113,11 @@ void Player::levelUp()
 
 	bool test = (mExpPoints > mNextLevelExp);
 	{
-		
-		std::cout.setf(std::cout.boolalpha);
-		std::cout << "test = " << test << ", true means test works, while loop does not." << std::endl;
+		if (debugLog.enableDebugMessages)
+		{
+			std::cout.setf(std::cout.boolalpha);
+			std::cout << "test = " << test << ", true means test works, while loop does not." << std::endl;
+		}
 	}
 
 
